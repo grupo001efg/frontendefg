@@ -15,13 +15,14 @@ header{
     float: left;
     width: 30%;
     height: 300px;
-    background-color: darkgray;
+    background-color: rgb(50, 85, 7);
     padding: 20px;
 }
 
-
-
-
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
 
   
