@@ -46,6 +46,38 @@ float: 0 210px;
     position: absolute;
    }
 
+   #rodape {
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 80%;
+    line-height: 14px;
+   }
+
+   #topo h1, #top p, #menulista {
+    margin: 0;
+    padding: 0;
+   }
+   
+   .menuitem {
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+   }
+
+   .menuitem:hover {
+    background-color: #ffffff;
+   }
+
+   .menuitem:first-child {
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+   }
+
 
 
 
