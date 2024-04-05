@@ -78,7 +78,30 @@ float: 0 210px;
     font-weight: bold;
    }
 
+   a {
+    color:black;
+    text-decoration: underline;
+   }
 
+   a:hover {
+    text-decoration: none;
+   }
+        @media (mas-width: 800px) {
+            #lateral {
+                width: auto;
+                position:relative;
+            }
+        #conteudo {
+            mergin-right: 0;
+        }
+}
 
-
+@media (max-width: 600px) {
+    #menu {
+        width: auto;
+        float: none;
+    }
+    #Conteudo {
+        margin: 0;
+    }
 }
