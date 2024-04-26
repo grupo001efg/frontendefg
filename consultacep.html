@@ -9,24 +9,22 @@
             document.getElementById('rua').value=("");
             document.getElementById('bairro').value=("");
             document.getElementById('cidade').value=("");
-            document.getElementById('uf').value=("");
+            document.getElementById('estado').value=("");
         }
 
-        function callback(conteudo){
-                if (!("erro" in conteudo)){
-                    document.getElementById('rua').value=(conteudo.logradouro);
-                    document.getElementById('bairro').value=(conteudo.bairro);
-                    document.getElementById('cidade').value=(conteudo.localidade);
-                    document.getElementById('uf').value=(conteudo.uf);
-                }else{
-                    limpaformulario();
-                    alert("CEP não encontrado!!!");
+        function meu_callback(conteudo){
+            if (!("erro" in conteudo)){
+                document.getElementById('rua').value=(conteudo.logradouro);
+                document.getElementById('bairro').value=(conteudo.bairro);
+                document.getElementById('cidade').value=(conteudo.localidade);
+                document.getElementById('estado').value=(conteudo.estado);
+            }else{
+                limpaformulario();
+                alert("CEP não encontrado!!!");
+            }
+        }
 
-                  }
-
-                }
-
-                function pesquisacep(valor){
+        function pesquisacep(valor){
             var cep = valor.replace(/\D/g,'');
             if (cep != ""){
                 var validacep = /^[0-9]{8}$/;
@@ -34,31 +32,30 @@
                     document.getElementById('rua').value="...";
                     document.getElementById('bairro').value="...";
                     document.getElementById('cidade').value="...";
-                    document.getElementById('uf').value="...";
-                        
+                    document.getElementById('estado').value="...";
+
                     var script = document.createElement('script');
 
-script.src='https://viacep.com.br/ws/'+ cep +'/json/?callback=meu_callback';
+                    script.src='https://viacep.com.br/ws/'+ cep +'/json/?callback=meu_callback';
 
-document.body.appendChild(script);
-}else{
-    limpaformulario();
+                    document.body.appendChild(script);
+                }else{
+                    limpaformulario();
                     alert("Formato do CEP Inválido!!!");
                 }
             }else{
                 limpaformulario();
-                    }
-                }
-
+            }
+        }
     </script>
 </head>
 <body>
- <form method="get">
-     <label>CEP:<input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);"></label><br>
-     <label>Rua:<input name="rua" type="text" id="rua"></label><br>
-     <label>Bairro:<input name="bairro" type="text" id="bairro"></label><br>
-     <label>Cidade:<input name="cidade" type="text" id="Cidade"></label><br>
-     <label>Estado:<input name="uf" type="text" id="uf"></label><br>
- </form>
+    <form method="get">
+        <label>CEP:<input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);"></label><br>
+        <label>Rua:<input name="rua" type="text" id="rua"></label><br>
+        <label>Bairro:<input name="bairro" type="text" id="bairro"></label><br>
+        <label>Cidade:<input name="cidade" type="text" id="cidade"></label><br>
+        <label>Estado:<input name="estado" type="text" id="estado"></label><br>        
+    </form>
 </body>
 </html>
