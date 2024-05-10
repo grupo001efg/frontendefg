@@ -2,7 +2,7 @@ const hora = document.querySelector('#hora');
 const minuto = document.querySelector('#minuto');
 const segundo = document.querySelector('#segundo');
 
-setInterval(() =>{
+setInterval(() => {
     let data = new Date();
 
     let horas = data.getHours();
