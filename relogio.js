@@ -9,9 +9,9 @@ setInterval(() =>{
     let minutos = data.getMinutes();
     let segundos = data.getSeconds();
     
-    hora.innerHTML = `${formatTime(hora)}`;
-    minuto.innerHTML = `${formatTime(minuto)}`;
-    segundo.innerHTML = `${formatTime(segundo)}`;
+    hora.innerHTML = `${formatTime(horas)}`;
+    minuto.innerHTML = `${formatTime(minutos)}`;
+    segundo.innerHTML = `${formatTime(segundos)}`;
 
 },1000);
 
