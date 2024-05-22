@@ -35,5 +35,7 @@ input {
     width: 160px;
     cursor: pointer;
     border-radius: 8px;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
