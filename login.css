@@ -27,6 +27,6 @@ div {
 input {
     border: none;
     height: 100px;
-    width: 50px;
+    width: 100loginpx;
     cursor: pointer;
 }
