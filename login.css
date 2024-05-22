@@ -34,5 +34,6 @@ input {
     height: 40px;
     width: 160px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
