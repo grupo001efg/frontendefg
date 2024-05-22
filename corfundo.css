@@ -1,16 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
-}
-
-caixa{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+*c
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +17,7 @@ caixa{
     </caixa>
     <script src="corfundo.js"></script>
 </body>
-</html>
+</html><script
 
 #######################################################
 
