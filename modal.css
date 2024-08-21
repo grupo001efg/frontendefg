@@ -9,12 +9,12 @@ body {
 }
 
 .modal {
-    background-color: darkcyan;
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    width: 30%;
+    width: 60%;
 }
 
 span {
