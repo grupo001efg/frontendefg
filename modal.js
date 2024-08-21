@@ -1,6 +1,6 @@
 const modal = document.querySelector('.container');
 
-function onOPen(){
+function onOpen(){
     modal.classList.add('active');
 }
 
