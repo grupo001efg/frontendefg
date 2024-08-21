@@ -16,3 +16,21 @@ body {
     border-radius: 10px;
     width: 30%;
 }
+
+span {
+    margin: 10px auto;
+    text-align: justify;
+}
+
+.btn-close {
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: darkblue;
+
+
+}
