@@ -3,4 +3,16 @@ body {
     width: 100%;
     height: 100vh;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.modal {
+    background-color: darkorchid;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
 }
