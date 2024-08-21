@@ -1,7 +1,7 @@
 const modal = document.querySelector('.container');
 
 function onOPen(){
-    modal.classList.add('active')
+    modal.classList.add('active');
 }
 
 function onClose(){
