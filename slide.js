@@ -6,7 +6,7 @@ var imagens = [
     './imagem/04.jpg'
 ];
 
-var tempo = 1000;
+var tempo = 2500;
 var cont = 0;
 
 function moverSlide(){
@@ -18,7 +18,7 @@ function moverSlide(){
         cont = 0;
     }
 
-    setTimeout(moverSlide(), tempo);
+    setTimeout("moverSlide()", tempo);
 }
 
 window.onload = moverSlide;
