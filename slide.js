@@ -1,9 +1,9 @@
 var slide = document.querySelector('.slideshow');
 var imagens = [
-    './imagem/01.jpg',
-    './imagem/02.jpg',
-    './imagem/03.jpg',
-    './imagem/04.jpg'
+    './imagem/01.jpeg',
+    './imagem/02.jpeg',
+    './imagem/03.jpeg',
+    './imagem/04.jpeg'
 ];
 
 var tempo = 2500;
