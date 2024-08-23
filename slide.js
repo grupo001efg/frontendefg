@@ -9,6 +9,8 @@ var imagens = [
 var tempo = 2500;
 var cont = 0;
 
+//teste
+
 function moverSlide(){
     slide.src = imagens[cont];
 
